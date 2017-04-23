@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSPurchaseReturn" targetNamespace="http://tempuri.org/DSPurchaseReturn.xsd" xmlns:mstns="http://tempuri.org/DSPurchaseReturn.xsd" xmlns="http://tempuri.org/DSPurchaseReturn.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString7" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString7 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString7" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Qry_PurchaseReturnMasterDetailsTableAdapter" GeneratorDataComponentClassName="Qry_PurchaseReturnMasterDetailsTableAdapter" Name="Qry_PurchaseReturnMasterDetails" UserDataComponentName="Qry_PurchaseReturnMasterDetailsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="XpressRetailConnectionString7 (Settings)" DbObjectName="XpressRetail.dbo.Qry_PurchaseReturnMasterDetails" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PurchaseReturn_SlNo, PurchaseMaster_InvoiceNo, PurchaseReturn_ReturnDate, PurchaseReturn_ReturnAmount, PurchaseReturn_Description, PurchaseReturnDetails_SlNo, PurchaseReturnDetails_ReturnDate, Product_SlNo, PurchaseReturn_ReturnQuantity, PurchaseReturnDetails_ReturnAmount, PurchaseReturnDetails_ReturnQuantity, PurchaseReturnDetails_ReceiveQuantity, Product_Code, Product_Name, Product_BarCode, Unit_Name FROM dbo.Qry_PurchaseReturnMasterDetails</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PurchaseReturn_SlNo" DataSetColumn="PurchaseReturn_SlNo" />
+              <Mapping SourceColumn="PurchaseMaster_InvoiceNo" DataSetColumn="PurchaseMaster_InvoiceNo" />
+              <Mapping SourceColumn="PurchaseReturn_ReturnDate" DataSetColumn="PurchaseReturn_ReturnDate" />
+              <Mapping SourceColumn="PurchaseReturn_ReturnAmount" DataSetColumn="PurchaseReturn_ReturnAmount" />
+              <Mapping SourceColumn="PurchaseReturn_Description" DataSetColumn="PurchaseReturn_Description" />
+              <Mapping SourceColumn="PurchaseReturnDetails_SlNo" DataSetColumn="PurchaseReturnDetails_SlNo" />
+              <Mapping SourceColumn="PurchaseReturnDetails_ReturnDate" DataSetColumn="PurchaseReturnDetails_ReturnDate" />
+              <Mapping SourceColumn="Product_SlNo" DataSetColumn="Product_SlNo" />
+              <Mapping SourceColumn="PurchaseReturn_ReturnQuantity" DataSetColumn="PurchaseReturn_ReturnQuantity" />
+              <Mapping SourceColumn="PurchaseReturnDetails_ReturnAmount" DataSetColumn="PurchaseReturnDetails_ReturnAmount" />
+              <Mapping SourceColumn="PurchaseReturnDetails_ReturnQuantity" DataSetColumn="PurchaseReturnDetails_ReturnQuantity" />
+              <Mapping SourceColumn="PurchaseReturnDetails_ReceiveQuantity" DataSetColumn="PurchaseReturnDetails_ReceiveQuantity" />
+              <Mapping SourceColumn="Product_Code" DataSetColumn="Product_Code" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="Product_BarCode" DataSetColumn="Product_BarCode" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSPurchaseReturn" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSPurchaseReturn" msprop:Generator_UserDSName="DSPurchaseReturn">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Qry_PurchaseReturnMasterDetails" msprop:Generator_TableClassName="Qry_PurchaseReturnMasterDetailsDataTable" msprop:Generator_TableVarName="tableQry_PurchaseReturnMasterDetails" msprop:Generator_TablePropName="Qry_PurchaseReturnMasterDetails" msprop:Generator_RowDeletingName="Qry_PurchaseReturnMasterDetailsRowDeleting" msprop:Generator_RowChangingName="Qry_PurchaseReturnMasterDetailsRowChanging" msprop:Generator_RowEvHandlerName="Qry_PurchaseReturnMasterDetailsRowChangeEventHandler" msprop:Generator_RowDeletedName="Qry_PurchaseReturnMasterDetailsRowDeleted" msprop:Generator_UserTableName="Qry_PurchaseReturnMasterDetails" msprop:Generator_RowChangedName="Qry_PurchaseReturnMasterDetailsRowChanged" msprop:Generator_RowEvArgName="Qry_PurchaseReturnMasterDetailsRowChangeEvent" msprop:Generator_RowClassName="Qry_PurchaseReturnMasterDetailsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PurchaseReturn_SlNo" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturn_SlNo" msprop:Generator_ColumnPropNameInRow="PurchaseReturn_SlNo" msprop:Generator_ColumnPropNameInTable="PurchaseReturn_SlNoColumn" msprop:Generator_UserColumnName="PurchaseReturn_SlNo" type="xs:int" />
+              <xs:element name="PurchaseMaster_InvoiceNo" msprop:Generator_ColumnVarNameInTable="columnPurchaseMaster_InvoiceNo" msprop:Generator_ColumnPropNameInRow="PurchaseMaster_InvoiceNo" msprop:Generator_ColumnPropNameInTable="PurchaseMaster_InvoiceNoColumn" msprop:Generator_UserColumnName="PurchaseMaster_InvoiceNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PurchaseReturn_ReturnDate" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturn_ReturnDate" msprop:Generator_ColumnPropNameInRow="PurchaseReturn_ReturnDate" msprop:Generator_ColumnPropNameInTable="PurchaseReturn_ReturnDateColumn" msprop:Generator_UserColumnName="PurchaseReturn_ReturnDate" type="xs:dateTime" />
+              <xs:element name="PurchaseReturn_ReturnAmount" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturn_ReturnAmount" msprop:Generator_ColumnPropNameInRow="PurchaseReturn_ReturnAmount" msprop:Generator_ColumnPropNameInTable="PurchaseReturn_ReturnAmountColumn" msprop:Generator_UserColumnName="PurchaseReturn_ReturnAmount" type="xs:decimal" />
+              <xs:element name="PurchaseReturn_Description" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturn_Description" msprop:Generator_ColumnPropNameInRow="PurchaseReturn_Description" msprop:Generator_ColumnPropNameInTable="PurchaseReturn_DescriptionColumn" msprop:Generator_UserColumnName="PurchaseReturn_Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PurchaseReturnDetails_SlNo" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturnDetails_SlNo" msprop:Generator_ColumnPropNameInRow="PurchaseReturnDetails_SlNo" msprop:Generator_ColumnPropNameInTable="PurchaseReturnDetails_SlNoColumn" msprop:Generator_UserColumnName="PurchaseReturnDetails_SlNo" type="xs:int" />
+              <xs:element name="PurchaseReturnDetails_ReturnDate" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturnDetails_ReturnDate" msprop:Generator_ColumnPropNameInRow="PurchaseReturnDetails_ReturnDate" msprop:Generator_ColumnPropNameInTable="PurchaseReturnDetails_ReturnDateColumn" msprop:Generator_UserColumnName="PurchaseReturnDetails_ReturnDate" type="xs:dateTime" />
+              <xs:element name="Product_SlNo" msprop:Generator_ColumnVarNameInTable="columnProduct_SlNo" msprop:Generator_ColumnPropNameInRow="Product_SlNo" msprop:Generator_ColumnPropNameInTable="Product_SlNoColumn" msprop:Generator_UserColumnName="Product_SlNo" type="xs:int" />
+              <xs:element name="PurchaseReturn_ReturnQuantity" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturn_ReturnQuantity" msprop:Generator_ColumnPropNameInRow="PurchaseReturn_ReturnQuantity" msprop:Generator_ColumnPropNameInTable="PurchaseReturn_ReturnQuantityColumn" msprop:Generator_UserColumnName="PurchaseReturn_ReturnQuantity" type="xs:double" />
+              <xs:element name="PurchaseReturnDetails_ReturnAmount" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturnDetails_ReturnAmount" msprop:Generator_ColumnPropNameInRow="PurchaseReturnDetails_ReturnAmount" msprop:Generator_ColumnPropNameInTable="PurchaseReturnDetails_ReturnAmountColumn" msprop:Generator_UserColumnName="PurchaseReturnDetails_ReturnAmount" type="xs:decimal" />
+              <xs:element name="PurchaseReturnDetails_ReturnQuantity" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturnDetails_ReturnQuantity" msprop:Generator_ColumnPropNameInRow="PurchaseReturnDetails_ReturnQuantity" msprop:Generator_ColumnPropNameInTable="PurchaseReturnDetails_ReturnQuantityColumn" msprop:Generator_UserColumnName="PurchaseReturnDetails_ReturnQuantity" type="xs:double" />
+              <xs:element name="PurchaseReturnDetails_ReceiveQuantity" msprop:Generator_ColumnVarNameInTable="columnPurchaseReturnDetails_ReceiveQuantity" msprop:Generator_ColumnPropNameInRow="PurchaseReturnDetails_ReceiveQuantity" msprop:Generator_ColumnPropNameInTable="PurchaseReturnDetails_ReceiveQuantityColumn" msprop:Generator_UserColumnName="PurchaseReturnDetails_ReceiveQuantity" type="xs:double" />
+              <xs:element name="Product_Code" msprop:Generator_ColumnVarNameInTable="columnProduct_Code" msprop:Generator_ColumnPropNameInRow="Product_Code" msprop:Generator_ColumnPropNameInTable="Product_CodeColumn" msprop:Generator_UserColumnName="Product_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" msprop:Generator_UserColumnName="Product_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_BarCode" msprop:Generator_ColumnVarNameInTable="columnProduct_BarCode" msprop:Generator_ColumnPropNameInRow="Product_BarCode" msprop:Generator_ColumnPropNameInTable="Product_BarCodeColumn" msprop:Generator_UserColumnName="Product_BarCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" msprop:Generator_UserColumnName="Unit_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

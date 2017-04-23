@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSEmployee" targetNamespace="http://tempuri.org/DSEmployee.xsd" xmlns:mstns="http://tempuri.org/DSEmployee.xsd" xmlns="http://tempuri.org/DSEmployee.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString4" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString4 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString4" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Qry_EmployeeTableAdapter" GeneratorDataComponentClassName="Qry_EmployeeTableAdapter" Name="Qry_Employee" UserDataComponentName="Qry_EmployeeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="XpressRetailConnectionString4 (Settings)" DbObjectName="XpressRetail.dbo.Qry_Employee" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Employee_SlNo, Designation_SlNo, Designation_Name, Employee_ID, Employee_Name, Employee_JoinDate, Employee_Gender, Employee_BirthDate, Employee_NID, Employee_ContactNo, Employee_Email, Employee_FatherName, Employee_MaritalStatus, Employee_MotherName, Employee_PrasentAddress, Employee_PermanentAddress, Employee_Pic, Department_SlNo, Department_Name FROM dbo.Qry_Employee</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Employee_SlNo" DataSetColumn="Employee_SlNo" />
+              <Mapping SourceColumn="Designation_SlNo" DataSetColumn="Designation_SlNo" />
+              <Mapping SourceColumn="Designation_Name" DataSetColumn="Designation_Name" />
+              <Mapping SourceColumn="Employee_ID" DataSetColumn="Employee_ID" />
+              <Mapping SourceColumn="Employee_Name" DataSetColumn="Employee_Name" />
+              <Mapping SourceColumn="Employee_JoinDate" DataSetColumn="Employee_JoinDate" />
+              <Mapping SourceColumn="Employee_Gender" DataSetColumn="Employee_Gender" />
+              <Mapping SourceColumn="Employee_BirthDate" DataSetColumn="Employee_BirthDate" />
+              <Mapping SourceColumn="Employee_NID" DataSetColumn="Employee_NID" />
+              <Mapping SourceColumn="Employee_ContactNo" DataSetColumn="Employee_ContactNo" />
+              <Mapping SourceColumn="Employee_Email" DataSetColumn="Employee_Email" />
+              <Mapping SourceColumn="Employee_FatherName" DataSetColumn="Employee_FatherName" />
+              <Mapping SourceColumn="Employee_MaritalStatus" DataSetColumn="Employee_MaritalStatus" />
+              <Mapping SourceColumn="Employee_MotherName" DataSetColumn="Employee_MotherName" />
+              <Mapping SourceColumn="Employee_PrasentAddress" DataSetColumn="Employee_PrasentAddress" />
+              <Mapping SourceColumn="Employee_PermanentAddress" DataSetColumn="Employee_PermanentAddress" />
+              <Mapping SourceColumn="Employee_Pic" DataSetColumn="Employee_Pic" />
+              <Mapping SourceColumn="Department_SlNo" DataSetColumn="Department_SlNo" />
+              <Mapping SourceColumn="Department_Name" DataSetColumn="Department_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSEmployee" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSEmployee" msprop:Generator_UserDSName="DSEmployee">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Qry_Employee" msprop:Generator_TableClassName="Qry_EmployeeDataTable" msprop:Generator_TableVarName="tableQry_Employee" msprop:Generator_TablePropName="Qry_Employee" msprop:Generator_RowDeletingName="Qry_EmployeeRowDeleting" msprop:Generator_RowChangingName="Qry_EmployeeRowChanging" msprop:Generator_RowEvHandlerName="Qry_EmployeeRowChangeEventHandler" msprop:Generator_RowDeletedName="Qry_EmployeeRowDeleted" msprop:Generator_UserTableName="Qry_Employee" msprop:Generator_RowChangedName="Qry_EmployeeRowChanged" msprop:Generator_RowEvArgName="Qry_EmployeeRowChangeEvent" msprop:Generator_RowClassName="Qry_EmployeeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Employee_SlNo" msprop:Generator_ColumnVarNameInTable="columnEmployee_SlNo" msprop:Generator_ColumnPropNameInRow="Employee_SlNo" msprop:Generator_ColumnPropNameInTable="Employee_SlNoColumn" msprop:Generator_UserColumnName="Employee_SlNo" type="xs:int" />
+              <xs:element name="Designation_SlNo" msprop:Generator_ColumnVarNameInTable="columnDesignation_SlNo" msprop:Generator_ColumnPropNameInRow="Designation_SlNo" msprop:Generator_ColumnPropNameInTable="Designation_SlNoColumn" msprop:Generator_UserColumnName="Designation_SlNo" type="xs:int" />
+              <xs:element name="Designation_Name" msprop:Generator_ColumnVarNameInTable="columnDesignation_Name" msprop:Generator_ColumnPropNameInRow="Designation_Name" msprop:Generator_ColumnPropNameInTable="Designation_NameColumn" msprop:Generator_UserColumnName="Designation_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_ID" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" msprop:Generator_UserColumnName="Employee_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Name" msprop:Generator_ColumnVarNameInTable="columnEmployee_Name" msprop:Generator_ColumnPropNameInRow="Employee_Name" msprop:Generator_ColumnPropNameInTable="Employee_NameColumn" msprop:Generator_UserColumnName="Employee_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_JoinDate" msprop:Generator_ColumnVarNameInTable="columnEmployee_JoinDate" msprop:Generator_ColumnPropNameInRow="Employee_JoinDate" msprop:Generator_ColumnPropNameInTable="Employee_JoinDateColumn" msprop:Generator_UserColumnName="Employee_JoinDate" type="xs:dateTime" />
+              <xs:element name="Employee_Gender" msprop:Generator_ColumnVarNameInTable="columnEmployee_Gender" msprop:Generator_ColumnPropNameInRow="Employee_Gender" msprop:Generator_ColumnPropNameInTable="Employee_GenderColumn" msprop:Generator_UserColumnName="Employee_Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_BirthDate" msprop:Generator_ColumnVarNameInTable="columnEmployee_BirthDate" msprop:Generator_ColumnPropNameInRow="Employee_BirthDate" msprop:Generator_ColumnPropNameInTable="Employee_BirthDateColumn" msprop:Generator_UserColumnName="Employee_BirthDate" type="xs:dateTime" />
+              <xs:element name="Employee_NID" msprop:Generator_ColumnVarNameInTable="columnEmployee_NID" msprop:Generator_ColumnPropNameInRow="Employee_NID" msprop:Generator_ColumnPropNameInTable="Employee_NIDColumn" msprop:Generator_UserColumnName="Employee_NID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_ContactNo" msprop:Generator_ColumnVarNameInTable="columnEmployee_ContactNo" msprop:Generator_ColumnPropNameInRow="Employee_ContactNo" msprop:Generator_ColumnPropNameInTable="Employee_ContactNoColumn" msprop:Generator_UserColumnName="Employee_ContactNo">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Email" msprop:Generator_ColumnVarNameInTable="columnEmployee_Email" msprop:Generator_ColumnPropNameInRow="Employee_Email" msprop:Generator_ColumnPropNameInTable="Employee_EmailColumn" msprop:Generator_UserColumnName="Employee_Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_FatherName" msprop:Generator_ColumnVarNameInTable="columnEmployee_FatherName" msprop:Generator_ColumnPropNameInRow="Employee_FatherName" msprop:Generator_ColumnPropNameInTable="Employee_FatherNameColumn" msprop:Generator_UserColumnName="Employee_FatherName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_MaritalStatus" msprop:Generator_ColumnVarNameInTable="columnEmployee_MaritalStatus" msprop:Generator_ColumnPropNameInRow="Employee_MaritalStatus" msprop:Generator_ColumnPropNameInTable="Employee_MaritalStatusColumn" msprop:Generator_UserColumnName="Employee_MaritalStatus">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_MotherName" msprop:Generator_ColumnVarNameInTable="columnEmployee_MotherName" msprop:Generator_ColumnPropNameInRow="Employee_MotherName" msprop:Generator_ColumnPropNameInTable="Employee_MotherNameColumn" msprop:Generator_UserColumnName="Employee_MotherName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_PrasentAddress" msprop:Generator_ColumnVarNameInTable="columnEmployee_PrasentAddress" msprop:Generator_ColumnPropNameInRow="Employee_PrasentAddress" msprop:Generator_ColumnPropNameInTable="Employee_PrasentAddressColumn" msprop:Generator_UserColumnName="Employee_PrasentAddress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_PermanentAddress" msprop:Generator_ColumnVarNameInTable="columnEmployee_PermanentAddress" msprop:Generator_ColumnPropNameInRow="Employee_PermanentAddress" msprop:Generator_ColumnPropNameInTable="Employee_PermanentAddressColumn" msprop:Generator_UserColumnName="Employee_PermanentAddress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Employee_Pic" msprop:Generator_ColumnVarNameInTable="columnEmployee_Pic" msprop:Generator_ColumnPropNameInRow="Employee_Pic" msprop:Generator_ColumnPropNameInTable="Employee_PicColumn" msprop:Generator_UserColumnName="Employee_Pic" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Department_SlNo" msprop:Generator_ColumnVarNameInTable="columnDepartment_SlNo" msprop:Generator_ColumnPropNameInRow="Department_SlNo" msprop:Generator_ColumnPropNameInTable="Department_SlNoColumn" msprop:Generator_UserColumnName="Department_SlNo" type="xs:int" />
+              <xs:element name="Department_Name" msprop:Generator_ColumnVarNameInTable="columnDepartment_Name" msprop:Generator_ColumnPropNameInRow="Department_Name" msprop:Generator_ColumnPropNameInTable="Department_NameColumn" msprop:Generator_UserColumnName="Department_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Qry_Employee" />
+      <xs:field xpath="mstns:Employee_SlNo" />
+      <xs:field xpath="mstns:Designation_SlNo" />
+      <xs:field xpath="mstns:Department_SlNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

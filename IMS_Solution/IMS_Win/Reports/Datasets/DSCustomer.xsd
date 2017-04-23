@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSCustomer" targetNamespace="http://tempuri.org/DSCustomer.xsd" xmlns:mstns="http://tempuri.org/DSCustomer.xsd" xmlns="http://tempuri.org/DSCustomer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString9" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString9 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString9" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Qry_CustomerTableAdapter" GeneratorDataComponentClassName="Qry_CustomerTableAdapter" Name="Qry_Customer" UserDataComponentName="Qry_CustomerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="XpressRetailConnectionString9 (Settings)" DbObjectName="XpressRetail.dbo.Qry_Customer" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Customer_Code, Customer_Name, Customer_Type, Customer_Phone, Customer_Mobile, CountryName, Customer_Email, Customer_OfficePhone, Customer_Address, Customer_Web, Customer_SlNo, District_SlNo, Country_SlNo, District_Name FROM dbo.Qry_Customer</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Customer_Code" DataSetColumn="Customer_Code" />
+              <Mapping SourceColumn="Customer_Name" DataSetColumn="Customer_Name" />
+              <Mapping SourceColumn="Customer_Type" DataSetColumn="Customer_Type" />
+              <Mapping SourceColumn="Customer_Phone" DataSetColumn="Customer_Phone" />
+              <Mapping SourceColumn="Customer_Mobile" DataSetColumn="Customer_Mobile" />
+              <Mapping SourceColumn="CountryName" DataSetColumn="CountryName" />
+              <Mapping SourceColumn="Customer_Email" DataSetColumn="Customer_Email" />
+              <Mapping SourceColumn="Customer_OfficePhone" DataSetColumn="Customer_OfficePhone" />
+              <Mapping SourceColumn="Customer_Address" DataSetColumn="Customer_Address" />
+              <Mapping SourceColumn="Customer_Web" DataSetColumn="Customer_Web" />
+              <Mapping SourceColumn="Customer_SlNo" DataSetColumn="Customer_SlNo" />
+              <Mapping SourceColumn="District_SlNo" DataSetColumn="District_SlNo" />
+              <Mapping SourceColumn="Country_SlNo" DataSetColumn="Country_SlNo" />
+              <Mapping SourceColumn="District_Name" DataSetColumn="District_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSCustomer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSCustomer" msprop:Generator_UserDSName="DSCustomer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Qry_Customer" msprop:Generator_TableClassName="Qry_CustomerDataTable" msprop:Generator_TableVarName="tableQry_Customer" msprop:Generator_TablePropName="Qry_Customer" msprop:Generator_RowDeletingName="Qry_CustomerRowDeleting" msprop:Generator_RowChangingName="Qry_CustomerRowChanging" msprop:Generator_RowEvHandlerName="Qry_CustomerRowChangeEventHandler" msprop:Generator_RowDeletedName="Qry_CustomerRowDeleted" msprop:Generator_UserTableName="Qry_Customer" msprop:Generator_RowChangedName="Qry_CustomerRowChanged" msprop:Generator_RowEvArgName="Qry_CustomerRowChangeEvent" msprop:Generator_RowClassName="Qry_CustomerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Customer_Code" msprop:Generator_ColumnVarNameInTable="columnCustomer_Code" msprop:Generator_ColumnPropNameInRow="Customer_Code" msprop:Generator_ColumnPropNameInTable="Customer_CodeColumn" msprop:Generator_UserColumnName="Customer_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Name" msprop:Generator_ColumnVarNameInTable="columnCustomer_Name" msprop:Generator_ColumnPropNameInRow="Customer_Name" msprop:Generator_ColumnPropNameInTable="Customer_NameColumn" msprop:Generator_UserColumnName="Customer_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Type" msprop:Generator_ColumnVarNameInTable="columnCustomer_Type" msprop:Generator_ColumnPropNameInRow="Customer_Type" msprop:Generator_ColumnPropNameInTable="Customer_TypeColumn" msprop:Generator_UserColumnName="Customer_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Phone" msprop:Generator_ColumnVarNameInTable="columnCustomer_Phone" msprop:Generator_ColumnPropNameInRow="Customer_Phone" msprop:Generator_ColumnPropNameInTable="Customer_PhoneColumn" msprop:Generator_UserColumnName="Customer_Phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Mobile" msprop:Generator_ColumnVarNameInTable="columnCustomer_Mobile" msprop:Generator_ColumnPropNameInRow="Customer_Mobile" msprop:Generator_ColumnPropNameInTable="Customer_MobileColumn" msprop:Generator_UserColumnName="Customer_Mobile">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CountryName" msprop:Generator_ColumnVarNameInTable="columnCountryName" msprop:Generator_ColumnPropNameInRow="CountryName" msprop:Generator_ColumnPropNameInTable="CountryNameColumn" msprop:Generator_UserColumnName="CountryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Email" msprop:Generator_ColumnVarNameInTable="columnCustomer_Email" msprop:Generator_ColumnPropNameInRow="Customer_Email" msprop:Generator_ColumnPropNameInTable="Customer_EmailColumn" msprop:Generator_UserColumnName="Customer_Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_OfficePhone" msprop:Generator_ColumnVarNameInTable="columnCustomer_OfficePhone" msprop:Generator_ColumnPropNameInRow="Customer_OfficePhone" msprop:Generator_ColumnPropNameInTable="Customer_OfficePhoneColumn" msprop:Generator_UserColumnName="Customer_OfficePhone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Address" msprop:Generator_ColumnVarNameInTable="columnCustomer_Address" msprop:Generator_ColumnPropNameInRow="Customer_Address" msprop:Generator_ColumnPropNameInTable="Customer_AddressColumn" msprop:Generator_UserColumnName="Customer_Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_Web" msprop:Generator_ColumnVarNameInTable="columnCustomer_Web" msprop:Generator_ColumnPropNameInRow="Customer_Web" msprop:Generator_ColumnPropNameInTable="Customer_WebColumn" msprop:Generator_UserColumnName="Customer_Web">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Customer_SlNo" msprop:Generator_ColumnVarNameInTable="columnCustomer_SlNo" msprop:Generator_ColumnPropNameInRow="Customer_SlNo" msprop:Generator_ColumnPropNameInTable="Customer_SlNoColumn" msprop:Generator_UserColumnName="Customer_SlNo" type="xs:int" />
+              <xs:element name="District_SlNo" msprop:Generator_ColumnVarNameInTable="columnDistrict_SlNo" msprop:Generator_ColumnPropNameInRow="District_SlNo" msprop:Generator_ColumnPropNameInTable="District_SlNoColumn" msprop:Generator_UserColumnName="District_SlNo" type="xs:int" minOccurs="0" />
+              <xs:element name="Country_SlNo" msprop:Generator_ColumnVarNameInTable="columnCountry_SlNo" msprop:Generator_ColumnPropNameInRow="Country_SlNo" msprop:Generator_ColumnPropNameInTable="Country_SlNoColumn" msprop:Generator_UserColumnName="Country_SlNo" type="xs:int" />
+              <xs:element name="District_Name" msprop:Generator_ColumnVarNameInTable="columnDistrict_Name" msprop:Generator_ColumnPropNameInRow="District_Name" msprop:Generator_ColumnPropNameInTable="District_NameColumn" msprop:Generator_UserColumnName="District_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Qry_Customer" />
+      <xs:field xpath="mstns:Customer_SlNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

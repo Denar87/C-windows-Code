@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSSalesStock" targetNamespace="http://tempuri.org/DSSalesStock.xsd" xmlns:mstns="http://tempuri.org/DSSalesStock.xsd" xmlns="http://tempuri.org/DSSalesStock.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString2" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString7" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString7 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString7" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Qry_SalesInventoryTableAdapter" GeneratorDataComponentClassName="Qry_SalesInventoryTableAdapter" Name="Qry_SalesInventory" UserDataComponentName="Qry_SalesInventoryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="XpressRetailConnectionString7 (Settings)" DbObjectName="XpressRetail.dbo.Qry_SalesInventory" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SaleInventory_SlNo, Product_SlNo, Unit_Name, Unit_SlNo, ProductCategory_Description, ProductCategory_Name, ProductCategory_SlNo, Product_Code, Product_Name, Product_IsRawMaterial, Product_BarCode, Product_IsFinishedGoods, Product_ReOrederLevel, Product_Purchase_Rate, Product_SellingPrice, SaleInventory_TotalQuantity, SaleInventory_ReceiveQuantity, SaleInventory_ReturnQuantity, SaleInventory_DamageQuantity FROM dbo.Qry_SalesInventory</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SaleInventory_SlNo" DataSetColumn="SaleInventory_SlNo" />
+              <Mapping SourceColumn="Product_SlNo" DataSetColumn="Product_SlNo" />
+              <Mapping SourceColumn="Unit_Name" DataSetColumn="Unit_Name" />
+              <Mapping SourceColumn="Unit_SlNo" DataSetColumn="Unit_SlNo" />
+              <Mapping SourceColumn="ProductCategory_Description" DataSetColumn="ProductCategory_Description" />
+              <Mapping SourceColumn="ProductCategory_Name" DataSetColumn="ProductCategory_Name" />
+              <Mapping SourceColumn="ProductCategory_SlNo" DataSetColumn="ProductCategory_SlNo" />
+              <Mapping SourceColumn="Product_Code" DataSetColumn="Product_Code" />
+              <Mapping SourceColumn="Product_Name" DataSetColumn="Product_Name" />
+              <Mapping SourceColumn="Product_IsRawMaterial" DataSetColumn="Product_IsRawMaterial" />
+              <Mapping SourceColumn="Product_BarCode" DataSetColumn="Product_BarCode" />
+              <Mapping SourceColumn="Product_IsFinishedGoods" DataSetColumn="Product_IsFinishedGoods" />
+              <Mapping SourceColumn="Product_ReOrederLevel" DataSetColumn="Product_ReOrederLevel" />
+              <Mapping SourceColumn="Product_Purchase_Rate" DataSetColumn="Product_Purchase_Rate" />
+              <Mapping SourceColumn="Product_SellingPrice" DataSetColumn="Product_SellingPrice" />
+              <Mapping SourceColumn="SaleInventory_TotalQuantity" DataSetColumn="SaleInventory_TotalQuantity" />
+              <Mapping SourceColumn="SaleInventory_ReceiveQuantity" DataSetColumn="SaleInventory_ReceiveQuantity" />
+              <Mapping SourceColumn="SaleInventory_ReturnQuantity" DataSetColumn="SaleInventory_ReturnQuantity" />
+              <Mapping SourceColumn="SaleInventory_DamageQuantity" DataSetColumn="SaleInventory_DamageQuantity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSSalesStock" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSSalesStock" msprop:Generator_UserDSName="DSSalesStock">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Qry_SalesInventory" msprop:Generator_TableClassName="Qry_SalesInventoryDataTable" msprop:Generator_TableVarName="tableQry_SalesInventory" msprop:Generator_TablePropName="Qry_SalesInventory" msprop:Generator_RowDeletingName="Qry_SalesInventoryRowDeleting" msprop:Generator_RowChangingName="Qry_SalesInventoryRowChanging" msprop:Generator_RowEvHandlerName="Qry_SalesInventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="Qry_SalesInventoryRowDeleted" msprop:Generator_UserTableName="Qry_SalesInventory" msprop:Generator_RowChangedName="Qry_SalesInventoryRowChanged" msprop:Generator_RowEvArgName="Qry_SalesInventoryRowChangeEvent" msprop:Generator_RowClassName="Qry_SalesInventoryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SaleInventory_SlNo" msprop:Generator_ColumnVarNameInTable="columnSaleInventory_SlNo" msprop:Generator_ColumnPropNameInRow="SaleInventory_SlNo" msprop:Generator_ColumnPropNameInTable="SaleInventory_SlNoColumn" msprop:Generator_UserColumnName="SaleInventory_SlNo" type="xs:int" />
+              <xs:element name="Product_SlNo" msprop:Generator_ColumnVarNameInTable="columnProduct_SlNo" msprop:Generator_ColumnPropNameInRow="Product_SlNo" msprop:Generator_ColumnPropNameInTable="Product_SlNoColumn" msprop:Generator_UserColumnName="Product_SlNo" type="xs:int" />
+              <xs:element name="Unit_Name" msprop:Generator_ColumnVarNameInTable="columnUnit_Name" msprop:Generator_ColumnPropNameInRow="Unit_Name" msprop:Generator_ColumnPropNameInTable="Unit_NameColumn" msprop:Generator_UserColumnName="Unit_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Unit_SlNo" msprop:Generator_ColumnVarNameInTable="columnUnit_SlNo" msprop:Generator_ColumnPropNameInRow="Unit_SlNo" msprop:Generator_ColumnPropNameInTable="Unit_SlNoColumn" msprop:Generator_UserColumnName="Unit_SlNo" type="xs:int" />
+              <xs:element name="ProductCategory_Description" msprop:Generator_ColumnVarNameInTable="columnProductCategory_Description" msprop:Generator_ColumnPropNameInRow="ProductCategory_Description" msprop:Generator_ColumnPropNameInTable="ProductCategory_DescriptionColumn" msprop:Generator_UserColumnName="ProductCategory_Description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductCategory_Name" msprop:Generator_ColumnVarNameInTable="columnProductCategory_Name" msprop:Generator_ColumnPropNameInRow="ProductCategory_Name" msprop:Generator_ColumnPropNameInTable="ProductCategory_NameColumn" msprop:Generator_UserColumnName="ProductCategory_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductCategory_SlNo" msprop:Generator_ColumnVarNameInTable="columnProductCategory_SlNo" msprop:Generator_ColumnPropNameInRow="ProductCategory_SlNo" msprop:Generator_ColumnPropNameInTable="ProductCategory_SlNoColumn" msprop:Generator_UserColumnName="ProductCategory_SlNo" type="xs:int" />
+              <xs:element name="Product_Code" msprop:Generator_ColumnVarNameInTable="columnProduct_Code" msprop:Generator_ColumnPropNameInRow="Product_Code" msprop:Generator_ColumnPropNameInTable="Product_CodeColumn" msprop:Generator_UserColumnName="Product_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_Name" msprop:Generator_ColumnVarNameInTable="columnProduct_Name" msprop:Generator_ColumnPropNameInRow="Product_Name" msprop:Generator_ColumnPropNameInTable="Product_NameColumn" msprop:Generator_UserColumnName="Product_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_IsRawMaterial" msprop:Generator_ColumnVarNameInTable="columnProduct_IsRawMaterial" msprop:Generator_ColumnPropNameInRow="Product_IsRawMaterial" msprop:Generator_ColumnPropNameInTable="Product_IsRawMaterialColumn" msprop:Generator_UserColumnName="Product_IsRawMaterial" type="xs:boolean" />
+              <xs:element name="Product_BarCode" msprop:Generator_ColumnVarNameInTable="columnProduct_BarCode" msprop:Generator_ColumnPropNameInRow="Product_BarCode" msprop:Generator_ColumnPropNameInTable="Product_BarCodeColumn" msprop:Generator_UserColumnName="Product_BarCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Product_IsFinishedGoods" msprop:Generator_ColumnVarNameInTable="columnProduct_IsFinishedGoods" msprop:Generator_ColumnPropNameInRow="Product_IsFinishedGoods" msprop:Generator_ColumnPropNameInTable="Product_IsFinishedGoodsColumn" msprop:Generator_UserColumnName="Product_IsFinishedGoods" type="xs:boolean" />
+              <xs:element name="Product_ReOrederLevel" msprop:Generator_ColumnVarNameInTable="columnProduct_ReOrederLevel" msprop:Generator_ColumnPropNameInRow="Product_ReOrederLevel" msprop:Generator_ColumnPropNameInTable="Product_ReOrederLevelColumn" msprop:Generator_UserColumnName="Product_ReOrederLevel" type="xs:int" />
+              <xs:element name="Product_Purchase_Rate" msprop:Generator_ColumnVarNameInTable="columnProduct_Purchase_Rate" msprop:Generator_ColumnPropNameInRow="Product_Purchase_Rate" msprop:Generator_ColumnPropNameInTable="Product_Purchase_RateColumn" msprop:Generator_UserColumnName="Product_Purchase_Rate" type="xs:decimal" />
+              <xs:element name="Product_SellingPrice" msprop:Generator_ColumnVarNameInTable="columnProduct_SellingPrice" msprop:Generator_ColumnPropNameInRow="Product_SellingPrice" msprop:Generator_ColumnPropNameInTable="Product_SellingPriceColumn" msprop:Generator_UserColumnName="Product_SellingPrice" type="xs:decimal" />
+              <xs:element name="SaleInventory_TotalQuantity" msprop:Generator_ColumnVarNameInTable="columnSaleInventory_TotalQuantity" msprop:Generator_ColumnPropNameInRow="SaleInventory_TotalQuantity" msprop:Generator_ColumnPropNameInTable="SaleInventory_TotalQuantityColumn" msprop:Generator_UserColumnName="SaleInventory_TotalQuantity" type="xs:double" />
+              <xs:element name="SaleInventory_ReceiveQuantity" msprop:Generator_ColumnVarNameInTable="columnSaleInventory_ReceiveQuantity" msprop:Generator_ColumnPropNameInRow="SaleInventory_ReceiveQuantity" msprop:Generator_ColumnPropNameInTable="SaleInventory_ReceiveQuantityColumn" msprop:Generator_UserColumnName="SaleInventory_ReceiveQuantity" type="xs:double" />
+              <xs:element name="SaleInventory_ReturnQuantity" msprop:Generator_ColumnVarNameInTable="columnSaleInventory_ReturnQuantity" msprop:Generator_ColumnPropNameInRow="SaleInventory_ReturnQuantity" msprop:Generator_ColumnPropNameInTable="SaleInventory_ReturnQuantityColumn" msprop:Generator_UserColumnName="SaleInventory_ReturnQuantity" type="xs:double" />
+              <xs:element name="SaleInventory_DamageQuantity" msprop:Generator_ColumnVarNameInTable="columnSaleInventory_DamageQuantity" msprop:Generator_ColumnPropNameInRow="SaleInventory_DamageQuantity" msprop:Generator_ColumnPropNameInTable="SaleInventory_DamageQuantityColumn" msprop:Generator_UserColumnName="SaleInventory_DamageQuantity" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Qry_SalesInventory" />
+      <xs:field xpath="mstns:SaleInventory_SlNo" />
+      <xs:field xpath="mstns:Product_SlNo" />
+      <xs:field xpath="mstns:Unit_SlNo" />
+      <xs:field xpath="mstns:ProductCategory_SlNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

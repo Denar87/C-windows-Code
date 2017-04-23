@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSSupplier" targetNamespace="http://tempuri.org/DSSupplier.xsd" xmlns:mstns="http://tempuri.org/DSSupplier.xsd" xmlns="http://tempuri.org/DSSupplier.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="XpressRetailConnectionString5" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="XpressRetailConnectionString5 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.IMS_Win.Properties.Settings.GlobalReference.Default.XpressRetailConnectionString5" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Qry_SupplierTotalPurchaseListTableAdapter" GeneratorDataComponentClassName="Qry_SupplierTotalPurchaseListTableAdapter" Name="Qry_SupplierTotalPurchaseList" UserDataComponentName="Qry_SupplierTotalPurchaseListTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="XpressRetailConnectionString5 (Settings)" DbObjectName="XpressRetail.dbo.Qry_SupplierTotalPurchaseList" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Expr1, Expr2, Expr3, Expr4, Expr5, Expr6, PurchaseMaster_DueAmount, Supplier_SlNo, District_Name, CountryName, Supplier_Web, Supplier_Code, Supplier_Name, Supplier_Type, Supplier_Phone, Supplier_Mobile, Supplier_Email, Supplier_Address, Supplier_OfficePhone FROM dbo.Qry_SupplierTotalPurchaseList</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Expr1" DataSetColumn="Expr1" />
+              <Mapping SourceColumn="Expr2" DataSetColumn="Expr2" />
+              <Mapping SourceColumn="Expr3" DataSetColumn="Expr3" />
+              <Mapping SourceColumn="Expr4" DataSetColumn="Expr4" />
+              <Mapping SourceColumn="Expr5" DataSetColumn="Expr5" />
+              <Mapping SourceColumn="Expr6" DataSetColumn="Expr6" />
+              <Mapping SourceColumn="PurchaseMaster_DueAmount" DataSetColumn="PurchaseMaster_DueAmount" />
+              <Mapping SourceColumn="Supplier_SlNo" DataSetColumn="Supplier_SlNo" />
+              <Mapping SourceColumn="District_Name" DataSetColumn="District_Name" />
+              <Mapping SourceColumn="CountryName" DataSetColumn="CountryName" />
+              <Mapping SourceColumn="Supplier_Web" DataSetColumn="Supplier_Web" />
+              <Mapping SourceColumn="Supplier_Code" DataSetColumn="Supplier_Code" />
+              <Mapping SourceColumn="Supplier_Name" DataSetColumn="Supplier_Name" />
+              <Mapping SourceColumn="Supplier_Type" DataSetColumn="Supplier_Type" />
+              <Mapping SourceColumn="Supplier_Phone" DataSetColumn="Supplier_Phone" />
+              <Mapping SourceColumn="Supplier_Mobile" DataSetColumn="Supplier_Mobile" />
+              <Mapping SourceColumn="Supplier_Email" DataSetColumn="Supplier_Email" />
+              <Mapping SourceColumn="Supplier_Address" DataSetColumn="Supplier_Address" />
+              <Mapping SourceColumn="Supplier_OfficePhone" DataSetColumn="Supplier_OfficePhone" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSSupplier" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSSupplier" msprop:Generator_UserDSName="DSSupplier">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Qry_SupplierTotalPurchaseList" msprop:Generator_TableClassName="Qry_SupplierTotalPurchaseListDataTable" msprop:Generator_TableVarName="tableQry_SupplierTotalPurchaseList" msprop:Generator_TablePropName="Qry_SupplierTotalPurchaseList" msprop:Generator_RowDeletingName="Qry_SupplierTotalPurchaseListRowDeleting" msprop:Generator_RowChangingName="Qry_SupplierTotalPurchaseListRowChanging" msprop:Generator_RowEvHandlerName="Qry_SupplierTotalPurchaseListRowChangeEventHandler" msprop:Generator_RowDeletedName="Qry_SupplierTotalPurchaseListRowDeleted" msprop:Generator_UserTableName="Qry_SupplierTotalPurchaseList" msprop:Generator_RowChangedName="Qry_SupplierTotalPurchaseListRowChanged" msprop:Generator_RowEvArgName="Qry_SupplierTotalPurchaseListRowChangeEvent" msprop:Generator_RowClassName="Qry_SupplierTotalPurchaseListRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Expr1" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr1" msprop:Generator_ColumnPropNameInRow="Expr1" msprop:Generator_ColumnPropNameInTable="Expr1Column" msprop:Generator_UserColumnName="Expr1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr2" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr2" msprop:Generator_ColumnPropNameInRow="Expr2" msprop:Generator_ColumnPropNameInTable="Expr2Column" msprop:Generator_UserColumnName="Expr2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr3" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr3" msprop:Generator_ColumnPropNameInRow="Expr3" msprop:Generator_ColumnPropNameInTable="Expr3Column" msprop:Generator_UserColumnName="Expr3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr4" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr4" msprop:Generator_ColumnPropNameInRow="Expr4" msprop:Generator_ColumnPropNameInTable="Expr4Column" msprop:Generator_UserColumnName="Expr4" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr5" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr5" msprop:Generator_ColumnPropNameInRow="Expr5" msprop:Generator_ColumnPropNameInTable="Expr5Column" msprop:Generator_UserColumnName="Expr5" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Expr6" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExpr6" msprop:Generator_ColumnPropNameInRow="Expr6" msprop:Generator_ColumnPropNameInTable="Expr6Column" msprop:Generator_UserColumnName="Expr6" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PurchaseMaster_DueAmount" msprop:Generator_ColumnVarNameInTable="columnPurchaseMaster_DueAmount" msprop:Generator_ColumnPropNameInRow="PurchaseMaster_DueAmount" msprop:Generator_ColumnPropNameInTable="PurchaseMaster_DueAmountColumn" msprop:Generator_UserColumnName="PurchaseMaster_DueAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Supplier_SlNo" msprop:Generator_ColumnVarNameInTable="columnSupplier_SlNo" msprop:Generator_ColumnPropNameInRow="Supplier_SlNo" msprop:Generator_ColumnPropNameInTable="Supplier_SlNoColumn" msprop:Generator_UserColumnName="Supplier_SlNo" type="xs:int" />
+              <xs:element name="District_Name" msprop:Generator_ColumnVarNameInTable="columnDistrict_Name" msprop:Generator_ColumnPropNameInRow="District_Name" msprop:Generator_ColumnPropNameInTable="District_NameColumn" msprop:Generator_UserColumnName="District_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CountryName" msprop:Generator_ColumnVarNameInTable="columnCountryName" msprop:Generator_ColumnPropNameInRow="CountryName" msprop:Generator_ColumnPropNameInTable="CountryNameColumn" msprop:Generator_UserColumnName="CountryName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Web" msprop:Generator_ColumnVarNameInTable="columnSupplier_Web" msprop:Generator_ColumnPropNameInRow="Supplier_Web" msprop:Generator_ColumnPropNameInTable="Supplier_WebColumn" msprop:Generator_UserColumnName="Supplier_Web">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Code" msprop:Generator_ColumnVarNameInTable="columnSupplier_Code" msprop:Generator_ColumnPropNameInRow="Supplier_Code" msprop:Generator_ColumnPropNameInTable="Supplier_CodeColumn" msprop:Generator_UserColumnName="Supplier_Code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Name" msprop:Generator_ColumnVarNameInTable="columnSupplier_Name" msprop:Generator_ColumnPropNameInRow="Supplier_Name" msprop:Generator_ColumnPropNameInTable="Supplier_NameColumn" msprop:Generator_UserColumnName="Supplier_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Type" msprop:Generator_ColumnVarNameInTable="columnSupplier_Type" msprop:Generator_ColumnPropNameInRow="Supplier_Type" msprop:Generator_ColumnPropNameInTable="Supplier_TypeColumn" msprop:Generator_UserColumnName="Supplier_Type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Phone" msprop:Generator_ColumnVarNameInTable="columnSupplier_Phone" msprop:Generator_ColumnPropNameInRow="Supplier_Phone" msprop:Generator_ColumnPropNameInTable="Supplier_PhoneColumn" msprop:Generator_UserColumnName="Supplier_Phone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Mobile" msprop:Generator_ColumnVarNameInTable="columnSupplier_Mobile" msprop:Generator_ColumnPropNameInRow="Supplier_Mobile" msprop:Generator_ColumnPropNameInTable="Supplier_MobileColumn" msprop:Generator_UserColumnName="Supplier_Mobile">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Email" msprop:Generator_ColumnVarNameInTable="columnSupplier_Email" msprop:Generator_ColumnPropNameInRow="Supplier_Email" msprop:Generator_ColumnPropNameInTable="Supplier_EmailColumn" msprop:Generator_UserColumnName="Supplier_Email">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_Address" msprop:Generator_ColumnVarNameInTable="columnSupplier_Address" msprop:Generator_ColumnPropNameInRow="Supplier_Address" msprop:Generator_ColumnPropNameInTable="Supplier_AddressColumn" msprop:Generator_UserColumnName="Supplier_Address">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Supplier_OfficePhone" msprop:Generator_ColumnVarNameInTable="columnSupplier_OfficePhone" msprop:Generator_ColumnPropNameInRow="Supplier_OfficePhone" msprop:Generator_ColumnPropNameInTable="Supplier_OfficePhoneColumn" msprop:Generator_UserColumnName="Supplier_OfficePhone">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Qry_SupplierTotalPurchaseList" />
+      <xs:field xpath="mstns:Supplier_SlNo" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB18B49F-1D18-4E29-95E7-187D4FEE28BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IMS_Entity</RootNamespace>
+    <AssemblyName>IMS_Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DamageProduct.cs" />
+    <Compile Include="func_GetReorderProduct.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Func_Get_BankStatement.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Func_TotalStock.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Func_TotalStockwithValue.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetItemCurrentStock.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSaleMasterDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Cash_TransactionByCode.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_DamagedProduct.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Expense_Statement.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Financial_Statement.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Financial_Statement_All.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_Financial_Statement_CustomerWise.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_SaleInvoice.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_SaleInvoiceByChallan.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_SaleInvoiceByQuotation.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_SaleInvoice_1.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Get_SaleMaster.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IMS_Entities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="productPrint.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qry_BankStatement.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_CashTransaction.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_CurrentInventory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_Customer.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_CustomerDue.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_CustomerPayment.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_DamageDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_Employee.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_Product.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseInventory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseInvoice.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseMaster.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseMasterDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseReturnDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_PurchaseReturnMasterDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_QuotationDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SaleMasterDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SaleReturnDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SaleReturnMasterDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SalesDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SalesInventory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SalesInvoice.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SalesMaster.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SalesPurchaseDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_Supplier.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SupplierDue.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SupplierPayment.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Qry_SupplierTotalPurchaseList.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="returnProduct.cs" />
+    <Compile Include="Tbl_Account.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_CashRegister.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_CashTransaction.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Company.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Country.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_CurrentInventory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Customer.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Damage.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_DamageDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Department.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Designation.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_District.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Employee.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Product.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_ProductCategory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_PurchaseDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_PurchaseInventory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_PurchaseMaster.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_PurchaseReturn.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_PurchaseReturnDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_QuotationDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_QuotationMaster.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SaleDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SaleDetails_1.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SaleInventory.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SaleReturn.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SaleReturnDetails.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SalesChallan.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SalesMaster.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SalesMaster_1.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_Supplier.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_System.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_SystemTemp.cs" />
+    <Compile Include="Tbl_Unit.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tbl_User.cs">
+      <DependentUpon>IMS_Entities.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IMS_Entities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IMS_Entities.cs</LastGenOutput>
+      <CustomToolNamespace>IMS_Entity</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
